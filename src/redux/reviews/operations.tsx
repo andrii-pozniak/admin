@@ -9,6 +9,7 @@ export const getReviews = createAsyncThunk<IResponse, IGetReviewsParams>(
   async (params: IGetReviewsParams = {}, { rejectWithValue }) => {
     try {
       const { data } = await reviewsApi.getReviews(params)
+      console.log("data", data)
       return data
     } catch (error) {
       return rejectWithValue(error)

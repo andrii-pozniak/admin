@@ -1,6 +1,6 @@
 import React from "react"
 import { useSelector } from "react-redux"
-import { useAppDispatch } from "src/redux/store"
+import { useAppDispatch } from "src/redux/hooks"
 import { selectDashboards } from "src/redux/dashboards/selectors"
 import { DataGrid, GridColDef, GridActionsCellItem } from "@mui/x-data-grid"
 import { Switch, Typography } from "@mui/material"
@@ -11,7 +11,7 @@ import Box from "@mui/material/Box"
 import s from "./DashboardTable.module.scss"
 import EditTableIcon from "src/images/svg/EditTableIcon"
 import { deleteDashboard } from "src/redux/dashboards/operations"
-import { updateDashboard } from "src/redux/dashboards/dashboardSlice"
+import { updateDashboard } from "src/redux/dashboards/slice"
 
 interface IProps {
   page: number

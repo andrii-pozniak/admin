@@ -84,6 +84,7 @@
   cursor: pointer;
 }
 
+
 .Violet-button-styles {
   // in use
   display: flex;
@@ -128,4 +129,11 @@
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
+}
+@mixin customPosition($top, $left, $width) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  z-index: 1;
+  width: $width;
 }

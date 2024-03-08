@@ -9,4 +9,4 @@ export const selectCount = (state: { reviews: { count: number } }) => state.revi
 
 export const selectReviews = (state: { reviews: { reviews: Review[] } }) => state.reviews.reviews
 
-export const selectColumns = (state: { reviews: { columns: ReviewRow[] } }) => state.reviews.columns
+export const selectColumns = (state: { reviews: { columns?: ReviewRow[] } }) => state.reviews.columns
